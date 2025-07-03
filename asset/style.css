@@ -85,29 +85,40 @@ a {
     border-color: #fce4e4;
   }
 }
+
+a:hover {
+  background-color: #eee;
+  transform: scale(105%);
+  text-decoration: none;
+  animation: movingBorders 3s infinite;
+}
+a{
+  text-decoration: none !important;
+}
+
 a svg {
-  fill: rgb(255, 110, 110);
+  fill: rgb(255, 110, 110) !important;
 }
 
 @keyframes beatingHeart {
   0% {
-    transform: scale(1);
+    transform: scale(1) !important;
   }
 
   15% {
-    transform: scale(1.15);
+    transform: scale(1.15) !important;
   }
 
   30% {
-    transform: scale(1);
+    transform: scale(1) !important;
   }
 
   45% {
-    transform: scale(1.15);
+    transform: scale(1.15) !important;
   }
 
   60% {
-    transform: scale(1);
+    transform: scale(1) !important;
   }
 }
 
@@ -115,4 +126,5 @@ a svg {
   transform: scale(105%);
   border-color: #ffd8d8;
   animation: beatingHeart 1.2s infinite;
+  text-decoration: none;
 }
